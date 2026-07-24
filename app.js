@@ -23,7 +23,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 app.get('/hello', (req, res) => {
-  res.send('Hello World!!!!!!!');
+  res.status(200).json({ message: 'Hello World!!!!!!!' });
 });
 
 // catch 404 and forward to error handler
